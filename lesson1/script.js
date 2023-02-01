@@ -14,7 +14,7 @@ let num1 = 1;
 console.log(num1);
 
 let num2 = 10;
-console.log(num1);
+console.log(num2);
 
 let num3 = -999;
 console.log(num3);
