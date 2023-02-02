@@ -48,16 +48,16 @@ let c = true;
 console.log(typeof c);
 
 let firstName = 'Pavlo';
-let lastName = 'Movchko ';
-let surName = ' Igorovich';
-let person = (lastName + firstName + surName);
+let lastName = 'Movchko';
+let surName = 'Igorovich';
+let person = (lastName + ' ' + firstName + ' ' + surName);
 console.log(person);
 
-name = prompt('Your Name');
+let name = prompt('Your Name');
 console.log(name);
 
-sur = prompt('Sur Name');
+let sur = prompt('Sur Name');
 console.log(sur);
 
-age = prompt('age');
+let age = +prompt('age');
 console.log(age);
