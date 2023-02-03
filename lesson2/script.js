@@ -143,5 +143,16 @@ console.log(users3[2].password);
 // }
 
 
+// let num = +prompt('Enter first number');
+// let num2 = +prompt('Enter second number');
+// if (num > num2) {
+//     console.log(num);
+// }else if (num === num2)  {
+//     console.log(num2 = num);
+// }else {
+//     console.log(num2);
+// }
+
+
 
 
