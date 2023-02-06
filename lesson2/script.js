@@ -20,6 +20,18 @@ let user1 = {
 
 }
 console.log(user1);
+let userB = {
+    title: 'title',
+    pageCount: 150,
+    genre: 'genre',
+}
+console.log(userB);
+let userBo = {
+    title: 'title',
+    pageCount: 200,
+    genre: 'genre',
+}
+console.log(userBo);
 
 let user2 = {
     title: 'title',
@@ -59,14 +71,56 @@ users3 = [
         name: 'vlad',
         username: 'vlados',
         password: 'passworsVlad',
+    },
+    {
+        name: 'dima',
+        username: 'dimos',
+        password: 'passworsDima',
+    },
+    {
+        name: 'misha',
+        username: 'meh',
+        password: 'passworsMisha',
+    },
+    {
+        name: 'user1',
+        username: 'us',
+        password: 'passworsUser1',
+    },
+    {
+        name: 'user2',
+        username: 'su',
+        password: 'passworsUser2',
+    },
+    {
+        name: 'user3',
+        username: 'ser',
+        password: 'passworsUser3',
+    },
+     {
+        name: 'user4',
+        username: 'usr',
+        password: 'passworsUser4',
+    },
+    {
+        name: 'user5',
+        username: 'er',
+        password: 'passworsUser5',
     }
+
 
 ];
 console.log(users3);
 console.log(users3[0].password);
 console.log(users3[1].password);
 console.log(users3[2].password);
-
+console.log(users3[3].password);
+console.log(users3[4].password);
+console.log(users3[5].password);
+console.log(users3[6].password);
+console.log(users3[7].password);
+console.log(users3[8].password);
+console.log(users3[9].password);
 
 
 
