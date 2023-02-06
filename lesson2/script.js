@@ -66,8 +66,7 @@ console.log(user2.authors)
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
 
-let users3;
-users3 = [
+let users3 = [
     {
     name: 'ostap',
     username: 'patso',
@@ -225,7 +224,7 @@ console.log(users3[9].password);
 //     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
 
-let a = 'Lorem ipsum';
+let a = 'lorem';
 b = a || 'default';
 console.log(b);
 
