@@ -1,3 +1,5 @@
+// - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+
 let arr;
 arr = [1, 2, '3', 4, 5, true, -7, false, 9.2, 0];
 console.log(arr);
@@ -12,6 +14,9 @@ console.log(arr[7]);
 console.log(arr[8]);
 console.log(arr[9]);
 console.log(arr.length);
+
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+
 
 let user1 = {
     title: 'title',
@@ -32,6 +37,9 @@ let userBo = {
     genre: 'genre',
 }
 console.log(userBo);
+
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+
 
 let user2 = {
     title: 'title',
@@ -54,6 +62,9 @@ let user2 = {
 }
 console.log(user2);
 console.log(user2.authors)
+
+// - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+
 
 let users3;
 users3 = [
@@ -123,6 +134,8 @@ console.log(users3[8].password);
 console.log(users3[9].password);
 
 
+// - Є змінна х, якій ви надаєте довільне числове значення.
+//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
 
 // let x = +prompt('number');
@@ -131,6 +144,9 @@ console.log(users3[9].password);
 // }else {
 //     console.log('false')
 // }
+
+// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+// (в першу, другу, третю или четверту частину години).
 
 
 
@@ -147,6 +163,7 @@ console.log(users3[9].password);
 //     console.log('enter a number from 0 to 59')
 // }
 
+// - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 
 
 // let day = +prompt('enter a number from 1 to 31');
@@ -160,6 +177,7 @@ console.log(users3[9].password);
 //     console.log('enter a number from 1 to 31')
 // }
 
+// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 
 
 // let schedule = +prompt('enter a number from 1 to 7');
@@ -189,6 +207,9 @@ console.log(users3[9].password);
 //         console.log('enter a number from 1 to 7');
 // }
 
+// - Користувач вводить або має два числа.
+// Потрібно знайти та вивести максимальне число з тих двох .
+//     Також потрібно врахувати коли введені рівні числа.
 
 // let num = +prompt('Enter first number');
 // let num2 = +prompt('Enter second number');
@@ -200,10 +221,15 @@ console.log(users3[9].password);
 //     console.log(num2);
 // }
 
+// - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
+//     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+
 
 let a = 'Lorem ipsum';
 b = a || 'default';
 console.log(b);
+
+// - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
 
 let coursesAndDurationArray = [
