@@ -1,0 +1,9 @@
+body {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.users-box {
+    width: 50%;
+}
