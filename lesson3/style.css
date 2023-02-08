@@ -1,0 +1,10 @@
+body {
+    background: silver;
+}
+.product-title {
+    color: red;
+}
+.product-image {
+    width: 300px;
+}
+
