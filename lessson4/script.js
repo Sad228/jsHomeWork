@@ -2,7 +2,7 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 function triangle (a, b) {
     let area  = (a * b);
-    document.write(area);
+    document.write(`${area}`);
     return area;
 }
 triangle(4,6);
@@ -12,7 +12,7 @@ document.write(`<hr>`);
 function circle(r) {
     const PI = 3.14;
     let ar = (PI * Math.pow(r,2))
-    document.write(ar);
+    document.write(`${ar}`);
     return ar;
 }
 
@@ -24,11 +24,11 @@ document.write(`<hr>`);
 function cylinder (r,h) {
     const PI = 3.14;
     let cyl = 2*PI*r*(h + r);
-    document.write(cyl);
+    document.write(`${cyl}`);
     return cyl;
 }
 cylinder(1,2);
- document.write(`<hr>`);
+document.write(`<hr>`);
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
@@ -82,7 +82,86 @@ document.write(`<hr>`);
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-function ul (ulText, i) {
-
+function ul (ulText, a) {
+    document.write(`<ul>`)
+    for (let i = 0; i < a; i++) {
+        document.write(`<li>${ulText}</li>`)
+    }
+    document.write(`</ul>`)
 }
-ul('Lorem ipsum dolor fasfaf',5)
+ul('Lorem ipsum dolor fasfaf',4);
+document.write(`<hr>`);
+
+// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+let listOfItems = ['html', 'css', 2, -6, true , false];
+function mass (lists) {
+    document.write(`<ul>`)
+    for (let i = 0; i < lists.length; i++) {
+        document.write(`<li>${lists}</li>`)
+    }
+    document.write(`</ul>`)
+}
+mass (listOfItems);
+document.write(`<hr>`);
+
+// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+function arr (array) {
+    for (const arrayElement of array) {
+        document.write(`<div>${arrayElement.id} - ${arrayElement.name} - ${arrayElement.age}</div>`)
+    }
+}
+arr(users)
+document.write(`<hr>`);
+// - створити функцію яка повертає найменьше число з масиву
+
+let lists = [1,4,6,10,-5];
+function num (number) {
+    numb = number[0];
+
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] < numb) numb = number[i];
+    }
+    document.write(numb);
+}
+num(lists);
+document.write(`<hr>`);
+
+// - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+
+function sum(arr) {
+    let suma = 0;
+    for (const arrElement of arr) {
+     suma += arrElement;
+    }
+    return suma;
+}
+document.write(`${sum(lists)}`)
+
+document.write(`<hr>`);
+
+// - створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
+
+function swap (arr, index1, index2) {
+    ind = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2]= ind;
+}
+swap(lists,2,0);
+console.log(lists);
+document.write(`<hr>`);
+
+// - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+
+function exchange (sumUAH, currencyValues, exchangeCurrency) {
+    if (exchangeCurrency === 'USD'){
+        return sumUAH / currencyValues;
+    }
+    if (exchangeCurrency === 'EUR'){
+        return sumUAH / currencyValues;
+    }
+}
+
+console.log(exchange(10000, 42, 'EUR'));
+console.log(exchange(10000, 40, 'USD'));

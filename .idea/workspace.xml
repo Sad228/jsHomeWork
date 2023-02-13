@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e35ffad-8678-485c-8b70-088dd790bb1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/script.js" afterDir="false" />
+    <list default="true" id="5e35ffad-8678-485c-8b70-088dd790bb1c" name="Changes" comment="lesson2">
+      <change afterPath="$PROJECT_DIR$/lesson2/tasks.txd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/task.txd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessson4/tasks.txd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessson4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lessson4/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/webstorm/JS-And&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,11 +61,74 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675238052297</updated>
-      <workItem from="1675238053441" duration="2254000" />
+      <workItem from="1675238053441" duration="2477000" />
+      <workItem from="1675244904427" duration="198000" />
+      <workItem from="1675245815777" duration="49000" />
+      <workItem from="1675246162755" duration="8000" />
+      <workItem from="1675246367708" duration="58000" />
+      <workItem from="1675246707034" duration="6000" />
+      <workItem from="1675351431771" duration="181000" />
+      <workItem from="1675355153549" duration="9332000" />
+      <workItem from="1675461108966" duration="2145000" />
+      <workItem from="1675465704122" duration="531000" />
+      <workItem from="1675528435152" duration="223000" />
+      <workItem from="1675598662505" duration="71000" />
+      <workItem from="1676116144298" duration="5387000" />
+      <workItem from="1676135204094" duration="3550000" />
+      <workItem from="1676213527718" duration="1049000" />
     </task>
+    <task id="LOCAL-00001" summary="Lesson1">
+      <created>1675240424263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675240424263</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Lesson1">
+      <created>1675240489815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675240489815</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixError">
+      <created>1675351596913</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675351596913</updated>
+    </task>
+    <task id="LOCAL-00004" summary="lesson2">
+      <created>1675364089317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675364089317</updated>
+    </task>
+    <task id="LOCAL-00005" summary="lesson2">
+      <created>1675465116688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675465116688</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lesson2">
+      <created>1676124615412</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676124615412</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson1" />
+    <MESSAGE value="fixError" />
+    <MESSAGE value="lesson2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2" />
   </component>
 </project>
