@@ -55,13 +55,13 @@ looper(users);
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-function p (text) {
+function paragraph (text) {
     let par = `<div>
                    <p>${text}</p>     
                </div>`;
     document.write(par);
 }
-p('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit!');
+paragraph('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit!');
 
 document.write(`<hr>`);
 
@@ -118,10 +118,10 @@ document.write(`<hr>`);
 
 let lists = [1,4,6,10,-5];
 function num (number) {
-    numb = number[0];
+   let numb = number[0];
 
     for (let i = 0; i < number.length; i++) {
-        if (number[i] < numb) numb = number[i];
+        if (number[i] < numb) { numb = number[i] }
     }
     document.write(numb);
 }
@@ -144,7 +144,7 @@ document.write(`<hr>`);
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
 
 function swap (arr, index1, index2) {
-    ind = arr[index1];
+   let ind = arr[index1];
     arr[index1] = arr[index2];
     arr[index2]= ind;
 }
@@ -154,7 +154,7 @@ document.write(`<hr>`);
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 
-function exchange (sumUAH, currencyValues, exchangeCurrency) {
+function exchange (sumUAH, [currencyValues, exchangeCurrency]) {
     if (exchangeCurrency === 'USD'){
         return sumUAH / currencyValues;
     }
@@ -163,5 +163,5 @@ function exchange (sumUAH, currencyValues, exchangeCurrency) {
     }
 }
 
-console.log(exchange(10000, 42, 'EUR'));
-console.log(exchange(10000, 40, 'USD'));
+console.log(exchange(10000, [42, 'EUR']));
+console.log(exchange(10000, [40, 'USD']));
