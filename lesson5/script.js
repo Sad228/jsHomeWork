@@ -128,7 +128,7 @@ let sum = (arr) => {
     }
     console.log(suma);
 }
-
+    sum(lists);
 
 
 
