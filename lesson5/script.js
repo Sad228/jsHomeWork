@@ -1,6 +1,6 @@
 
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-let triangle = (a, b) => a * b;
+let triangle = (a, b) =>  a * b ;
 
 console.log(triangle(4, 6));
 
