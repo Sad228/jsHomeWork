@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e35ffad-8678-485c-8b70-088dd790bb1c" name="Changes" comment="lesson2">
-      <change afterPath="$PROJECT_DIR$/lesson6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson6/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson6/tasks.txd" afterDir="false" />
+    <list default="true" id="5e35ffad-8678-485c-8b70-088dd790bb1c" name="Changes" comment="lesson6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson5/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson6/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +73,8 @@
       <workItem from="1676135204094" duration="3550000" />
       <workItem from="1676213527718" duration="1049000" />
       <workItem from="1676728297073" duration="4076000" />
+      <workItem from="1676750790106" duration="93000" />
+      <workItem from="1676811875140" duration="7250000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson1">
       <created>1675240424263</created>
@@ -119,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676124615412</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lesson6">
+      <created>1676750831812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676750831812</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +135,7 @@
     <MESSAGE value="Lesson1" />
     <MESSAGE value="fixError" />
     <MESSAGE value="lesson2" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2" />
+    <MESSAGE value="lesson6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6" />
   </component>
 </project>
