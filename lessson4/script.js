@@ -154,14 +154,13 @@ document.write(`<hr>`);
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 
-function exchange (sumUAH, [currencyValues, exchangeCurrency]) {
-    if (exchangeCurrency === 'USD'){
-        return sumUAH / currencyValues;
-    }
-    if (exchangeCurrency === 'EUR'){
-        return sumUAH / currencyValues;
+function exchange (sumUAH, currencyValues, exchangeCurrency) {
+    for (const sumUAHElement of currencyValues) {
+
+        if (sumUAHElement.currency === exchangeCurrency) {
+            return sumUAH / sumUAHElement.value;
+        }
     }
 }
 
-console.log(exchange(10000, [42, 'EUR']));
-console.log(exchange(10000, [40, 'USD']));
+console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD'));

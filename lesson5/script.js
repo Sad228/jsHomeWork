@@ -145,14 +145,13 @@ console.log(lists);
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 
-let exchange = (sumUAH, [currencyValues, exchangeCurrency]) => {
-    if (exchangeCurrency === 'USD'){
-        console.log(sumUAH / currencyValues);
-    }
-    if (exchangeCurrency === 'EUR'){
-        console.log(sumUAH / currencyValues);
-    }
-}
+let exchange = (sumUAH, currencyValues, exchangeCurrency) => {
+    for (const sumUAHElement of currencyValues) {
 
-exchange(10000, [42, 'EUR']);
-exchange(10000, [40, 'USD']);
+        if (sumUAHElement.currency === exchangeCurrency) {
+            return sumUAH / sumUAHElement.value;
+        }
+    }
+};
+
+console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'EUR'));
