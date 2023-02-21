@@ -130,7 +130,7 @@ let redCards = cards.filter(value => value.color === "Red");
 console.log(redCards);
 let diamond = cards.filter(value => value.suit === "Diamonds");
 console.log(diamond);
-let allClubs = cards.filter(value => value.suit === "Clubs" && value.value >= "9");
+let allClubs = cards.filter(value => value.suit === "Clubs" && ['9','10', 'Ace','Jack','Queen','King'].includes(value.value));
 console.log(allClubs);
 //
 // =========================
@@ -240,5 +240,7 @@ let Array = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
-let filAws = Array.filter(value => value.modules);
-console.log(filAws);
+let filSass = Array.filter(value => value.modules.includes('sass'));
+console.log(filSass);
+let filDocker = Array.filter(value => value.modules.includes('docker'));
+console.log(filDocker);
