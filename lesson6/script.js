@@ -46,6 +46,7 @@ let array = [10,8,-7,55,987,-1011,0,1050,0];
 // sortNums(nums,'descending') // [21,11,3]
 
 let nums = [11,21,3];
+
 let sortNums = nums.sort((a, b) => a - b);
 console.log(sortNums);
 let sortNum = nums.sort((a, b) => b - a);
