@@ -70,6 +70,49 @@ console.log(sorter);
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+
+function Car(model,maker,year,maxSpeed,capacity) {
+    this.model = model;
+    this.maker = maker;
+    this.year = year;
+    this.maxSpeed = maxSpeed;
+    this.capac = capacity;
+}
+let user1 = new Car('VolkswagenJetta','Germany',2013,260,1.8);
+console.log(user1);
+user1.drive = function ()
+{
+    console.log( `Їдемо зі швидкістю ${user1.maxSpeed} кілометрів на годину`)
+};
+user1.drive();
+
+user1.info = function () {
+    console.log(`
+    Модель автомобіля - ${this.model},
+    Виробник - ${this.maker},
+    Рік випуску - ${this.year},
+    Максимальна швидкість - ${this.maxSpeed},
+    Об'єм - ${this.capac}
+    `)
+    };
+    user1.info();
+
+
+    user1.increaseMaxSpeed = function (newSpeed) {
+     return    user1.maxSpeed += newSpeed;
+    };
+console.log(user1.increaseMaxSpeed(20));
+
+user1.changeYear = function (newValue) {
+    return user1.year = newValue;
+}
+console.log(user1.changeYear(2015));
+
+user1.addDriver = function (driver){
+ return    user1.driver = driver;
+};
+console.log(user1.addDriver({name:'vasya',age:22}))
+
 //
 //
 // - (Те саме, тільки через клас)
@@ -80,9 +123,89 @@ console.log(sorter);
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 //
+
+class Car2 {
+    constructor(model,maker,year,maxSpeed,capacity) {
+        this.model = model;
+        this.maker = maker;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+        this.capac = capacity;
+    }
+}
+let user2 = new Car2('Ford Mustang','USA',2020,300,4.2);
+console.log(user2);
+
+user2.drive = function ()
+{
+    console.log( `Їдемо зі швидкістю ${user1.maxSpeed} кілометрів на годину`)
+};
+user2.drive();
+
+user2.info = function () {
+    console.log(`
+    Модель автомобіля - ${this.model},
+    Виробник - ${this.maker},
+    Рік випуску - ${this.year},
+    Максимальна швидкість - ${this.maxSpeed},
+    Об'єм - ${this.capac}
+    `)
+};
+user2.info();
+
+
+user2.increaseMaxSpeed = function (newSpeed) {
+    return    user2.maxSpeed += newSpeed;
+};
+console.log(user2.increaseMaxSpeed(40));
+
+user2.changeYear = function (newValue) {
+    return user2.year = newValue;
+}
+console.log(user2.changeYear(2022));
+
+user2.addDriver = function (driver){
+    return    user2.driver = driver;
+};
+console.log(user2.addDriver({name:'vitya',age:20}))
+
 //
 //
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+function Popel (name,age,size){
+    this.name = name;
+    this.age = age;
+    this.size =  size;
+}
+let popels = [
+    new Popel('Emma' , 18, 35 ),
+    new Popel( 'Sophia',19,34 ),
+    new Popel( 'Olivia' , 20,36),
+    new Popel( 'Ava', 18,37),
+    new Popel( 'Isabella', 17, 36),
+    new Popel( 'Mia', 21, 35),
+    new Popel( 'Charlotte', 22, 33),
+    new Popel( 'Amelia',18, 33),
+    new Popel( 'Harper', 25, 35),
+    new Popel( 'Evelyn', 30, 40)
+];
+class Prince {
+    constructor(name,age,slipper) {
+        this.name = name;
+        this.age = age;
+        this.slipper = slipper;
+    }
+}
+let find = new Prince('Artur',20,33);
+
+for (const popel of popels) {
+    if (popel.size === find.slipper & popel.age <= 20) {
+       console.log(popel)
+    }
+}
+
+console.log(popels.find(value => value.size === 33 & value.age <= 18 ));
