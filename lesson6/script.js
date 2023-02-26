@@ -44,13 +44,17 @@ let array = [10,8,-7,55,987,-1011,0,1050,0];
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
-
-let nums = [11,21,3];
-
-let sortNums = nums.sort((a, b) => a - b);
-console.log(sortNums);
-let sortNum = nums.sort((a, b) => b - a);
-console.log(sortNum);
+let numbers = [11,21,3]
+let nums = function (mass, text) {
+   if (text === 'ascending') {
+      return  mass.sort((a, b) => a - b);
+   }
+   if (text === 'descending') {
+     return   mass.sort((a, b) => b - a);
+   }
+};
+console.log(nums(numbers, 'ascending'));
+console.log(nums(numbers, 'descending'));
 // ==========================
 // - є масив
 let coursesAndDurationArray = [
