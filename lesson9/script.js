@@ -132,13 +132,12 @@ let simpsons = [
 let div3 = document.createElement('div')
 for (const simpson of simpsons) {
     let divSimp = document.createElement('div');
+    let photoSims = document.createElement('img');
     divSimp.classList.add('member');
-    divSimp.innerText = simpson.name ;
-    let br = document.createElement('br')
-    div3.appendChild(br);
-       divSimp.innerText = simpson.age ;
-       divSimp.innerText = simpson.info;
+    divSimp.innerText = simpson.name + ' ' + simpson.surname +  ' - ' + simpson.age +  ' - ' + simpson.info ;
+    photoSims.src = simpson.photo;
     div3.appendChild(divSimp);
+    div3.appendChild(photoSims);
 }
 document.body.appendChild(div3);
 
@@ -150,8 +149,135 @@ document.body.appendChild(div3);
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
 // ------------------
+
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+
+let divMain2 = document.createElement('div');
+for (const coursesArrayElement of coursesArray) {
+    let divTitle = document.createElement('div');
+    let divMonth = document.createElement('div');
+    let divHour = document.createElement('div');
+    divTitle.innerText = coursesArrayElement.title;
+    divMonth.innerText = coursesArrayElement.monthDuration;
+    divHour.innerText = coursesArrayElement.hourDuration;
+    let divModulesMain = document.createElement('div');
+    let ulMod = document.createElement('ul')
+    for (const item of coursesArrayElement.modules) {
+        let divModules = document.createElement('li');
+        divModules.innerText = item;
+        divModulesMain.appendChild(divModules);
+    }
+
+
+    divMain2.append(divTitle,divMonth,divHour,divModulesMain);
+    divModulesMain.appendChild(ulMod);
+
+}
+document.body.appendChild(divMain2);
 //
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 //
+
+let id = 'lorem ipsum bla bla';
+let div4 = document.createElement('div');
+div4.innerText = id;
+document.body.appendChild(div4);
+let button = document.createElement('button');
+document.body.appendChild(button);
+button.style.height = '20px';
+button.style.width = '50px';
+button.onclick = function (){
+    div4.style.display = 'none';
+}
+let en = document.createElement('br');
+document.body.appendChild(en);
 //
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+let div5 = document.createElement('div');
+let inp = document.createElement('input');
+document.body.appendChild(div5);
+inp.type = 'number';
+inp.min = '2';
+inp.placeholder = 'enter age';
+let par = document.createElement('p');
+let par2 = document.createElement('p');
+let button2 = document.createElement('button');
+button2.style.height = '20px';
+button2.style.width = '50px';
+button2.onclick = function (){
+    if (inp.value < 18) {
+        par.innerText = '18+';
+    }else {
+        par2.innerText = 'Welcome';
+
+    }
+}
+div5.append(inp,par,par2,button2);
